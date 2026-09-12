@@ -1,0 +1,6 @@
+{
+  "name": "FitHisab",
+  "description": "Practical fitness calculators, everyday nutrition guides, walking tools, and South Asian & Pakistani food calorie information.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
