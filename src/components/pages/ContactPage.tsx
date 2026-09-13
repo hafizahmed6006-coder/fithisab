@@ -21,7 +21,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
       <SEOHead
         title="Contact FitHisab - Suggestions & Food Corrections"
         description="Have a question, feedback, or a traditional recipe calorie correction for FitHisab? Reach out to our team."
-        canonicalUrl="https://fithisab.com/contact/"
+        canonicalUrl="https://fithisab.pages.dev/contact/"
       />
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6">

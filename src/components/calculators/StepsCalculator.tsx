@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Footprints, Clock, Flame, Compass, Info, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Footprints, Clock, Flame, Compass, Info, CheckCircle2, ArrowRight, HelpCircle, Activity } from 'lucide-react';
 import { Breadcrumbs } from '../common/Breadcrumbs';
 import { SEOHead } from '../common/SEOHead';
 import { AdSlot } from '../common/AdSlot';
@@ -47,9 +47,9 @@ export const StepsCalculator: React.FC<StepsCalculatorProps> = ({ onNavigate }) 
   return (
     <div className="min-h-screen bg-[#FAFCFA] py-6 sm:py-10">
       <SEOHead
-        title="Steps to KM & Miles Calculator - 10,000 Steps in KM"
-        description="Convert steps into exact kilometers and miles based on your height and walking pace. Accurate calorie burns and walking duration."
-        canonicalUrl="https://fithisab.com/calculators/steps-to-km/"
+        title="Steps to KM Calculator - 10000 Steps in KM & 5000 Steps in KM"
+        description="Convert steps to kilometers and miles accurately. See how many km is 10,000 steps and 5,000 steps, estimated walking time, and calories burned."
+        canonicalUrl="https://fithisab.pages.dev/calculators/steps-to-km/"
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -69,8 +69,33 @@ export const StepsCalculator: React.FC<StepsCalculatorProps> = ({ onNavigate }) 
             Steps to Kilometers & Miles Calculator
           </h1>
           <p className="text-sm sm:text-base text-[#64787A] mt-2 leading-relaxed">
-            Wondering &ldquo;how many km is 10,000 steps?&rdquo; Stride length changes significantly with height. FitHisab calculates your exact personal stride for clinical accuracy.
+            Wondering &ldquo;how many km is 10,000 steps?&rdquo; Stride length changes significantly with height and pace. FitHisab calculates your exact personal stride for clinical accuracy.
           </p>
+
+          {/* Quick Direct Answers for 10000 steps in km and 5000 steps in km */}
+          <div className="mt-4 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#EAF8F7] to-[#FAFCFA] border-2 border-[#16A6A3]/30 shadow-xs">
+            <div className="flex items-start gap-3">
+              <div className="w-9 h-9 rounded-xl bg-[#087F82] text-white flex items-center justify-center shrink-0 mt-0.5">
+                <CheckCircle2 className="w-5 h-5" />
+              </div>
+              <div>
+                <strong className="text-sm font-bold text-[#0B4F55] block mb-1">
+                  Quick Answer for Daily Step Goals:
+                </strong>
+                <ul className="text-sm text-[#183438] space-y-1.5 font-medium">
+                  <li>
+                    <strong>10,000 steps in km:</strong> Approximately <strong>7.0 to 7.8 kilometers</strong> (4.4 to 4.9 miles) for an average adult stride, burning ~380 to 450 calories in about 85 to 100 minutes of brisk walking.
+                  </li>
+                  <li>
+                    <strong>5,000 steps in km:</strong> Approximately <strong>3.5 to 3.9 kilometers</strong> (2.2 to 2.4 miles), burning ~190 to 225 calories in about 40 to 50 minutes of walking.
+                  </li>
+                </ul>
+                <p className="text-xs text-[#64787A] mt-2">
+                  Use the calculator below to input your exact height for tailored kilometer conversions.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-[#DCEBE9] my-6">
@@ -240,8 +265,109 @@ export const StepsCalculator: React.FC<StepsCalculatorProps> = ({ onNavigate }) 
                 </tbody>
               </table>
             </div>
+            <p className="text-[11px] text-[#64787A] mt-2 italic">
+              Estimated distances and calorie burns are approximate based on standard height-adjusted stride mechanics and moderate brisk pace.
+            </p>
           </div>
 
+        </div>
+
+        {/* Steps to KM FAQ & Informational Section */}
+        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-[#DCEBE9] my-8 space-y-4">
+          <h3 className="text-lg sm:text-xl font-bold text-[#0B4F55] flex items-center gap-2">
+            <HelpCircle className="w-5 h-5 text-[#087F82]" />
+            <span>Frequently Asked Questions: Steps, Kilometers & Walking Calories</span>
+          </h3>
+
+          <div className="space-y-3 pt-2">
+            <div className="p-4 rounded-xl bg-[#FAFCFA] border border-[#DCEBE9]">
+              <h4 className="text-sm sm:text-base font-bold text-[#183438] mb-1.5 flex items-start gap-2">
+                <span className="text-[#087F82] font-extrabold">Q:</span>
+                <span>How many kilometers is 10,000 steps?</span>
+              </h4>
+              <p className="text-xs sm:text-sm text-[#64787A] leading-relaxed pl-5">
+                For most adults of average height (160 cm to 180 cm), 10,000 steps equals roughly <strong>7.0 to 7.8 kilometers</strong> (approximately 4.4 to 4.9 miles). A person with a taller stature has a longer stride length and may cover over 8.0 km, while a shorter person may cover around 6.8 km.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-[#FAFCFA] border border-[#DCEBE9]">
+              <h4 className="text-sm sm:text-base font-bold text-[#183438] mb-1.5 flex items-start gap-2">
+                <span className="text-[#087F82] font-extrabold">Q:</span>
+                <span>How many kilometers is 5,000 steps?</span>
+              </h4>
+              <p className="text-xs sm:text-sm text-[#64787A] leading-relaxed pl-5">
+                5,000 steps equals roughly <strong>3.5 to 3.9 kilometers</strong> (approximately 2.2 to 2.4 miles). Walking 5,000 steps at a brisk pace typically takes 40 to 50 minutes and burns approximately 190 to 225 calories.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-[#FAFCFA] border border-[#DCEBE9]">
+              <h4 className="text-sm sm:text-base font-bold text-[#183438] mb-1.5 flex items-start gap-2">
+                <span className="text-[#087F82] font-extrabold">Q:</span>
+                <span>How many calories do 10,000 steps burn?</span>
+              </h4>
+              <p className="text-xs sm:text-sm text-[#64787A] leading-relaxed pl-5">
+                A 10,000-step walk burns approximately <strong>380 to 460 calories</strong>, depending on your body weight, walking speed, and gradient. It represents an excellent daily cardio target to support a caloric deficit when paired with our{' '}
+                <button
+                  onClick={() => onNavigate('/calculators/calorie/')}
+                  className="text-[#087F82] underline font-medium hover:text-[#0B4F55]"
+                >
+                  Daily Calorie Calculator
+                </button>.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-[#FAFCFA] border border-[#DCEBE9]">
+              <h4 className="text-sm sm:text-base font-bold text-[#183438] mb-1.5 flex items-start gap-2">
+                <span className="text-[#087F82] font-extrabold">Q:</span>
+                <span>How does height affect steps-to-kilometer conversion?</span>
+              </h4>
+              <p className="text-xs sm:text-sm text-[#64787A] leading-relaxed pl-5">
+                Stride length is biologically proportional to leg length and height. On average, human stride length equals approximately 41.5% of height for men and 41.3% for women. A taller person takes fewer steps to travel one kilometer than someone shorter.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Related Health Calculators */}
+        <div className="my-8">
+          <h3 className="text-lg font-bold text-[#0B4F55] mb-4">
+            Related Fitness Calculators
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <button
+              onClick={() => onNavigate('/calculators/calorie/')}
+              className="bg-white rounded-xl border border-[#DCEBE9] hover:border-[#16A6A3] p-4 text-left transition-all group"
+            >
+              <div className="font-bold text-sm text-[#183438] group-hover:text-[#087F82] mb-1">
+                Daily Calorie Calculator
+              </div>
+              <div className="text-xs text-[#64787A]">
+                Calculate your exact maintenance, weight loss, and surplus calorie targets.
+              </div>
+            </button>
+            <button
+              onClick={() => onNavigate('/calculators/bmi/')}
+              className="bg-white rounded-xl border border-[#DCEBE9] hover:border-[#16A6A3] p-4 text-left transition-all group"
+            >
+              <div className="font-bold text-sm text-[#183438] group-hover:text-[#087F82] mb-1">
+                South Asian BMI Calculator
+              </div>
+              <div className="text-xs text-[#64787A]">
+                Check WHO cardiometabolic cut-offs tailored for South Asian body types.
+              </div>
+            </button>
+            <button
+              onClick={() => onNavigate('/food-calories/')}
+              className="bg-white rounded-xl border border-[#DCEBE9] hover:border-[#16A6A3] p-4 text-left transition-all group"
+            >
+              <div className="font-bold text-sm text-[#183438] group-hover:text-[#087F82] mb-1">
+                Food Calorie Database
+              </div>
+              <div className="text-xs text-[#64787A]">
+                Look up calories and walking burn times for roti, biryani, samosa, and chai.
+              </div>
+            </button>
+          </div>
         </div>
 
         <AdSlot slot={ADS_CONFIG.SLOTS.IN_ARTICLE_CONTENT} />

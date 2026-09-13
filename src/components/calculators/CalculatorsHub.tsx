@@ -28,7 +28,7 @@ export const CalculatorsHub: React.FC<CalculatorsHubProps> = ({ onNavigate }) =>
       <SEOHead
         title="Fitness & Health Calculators - FitHisab"
         description="Explore all free fitness calculators on FitHisab: BMI with South Asian criteria, TDEE daily calories, protein targets, steps to km, and ideal body weight."
-        canonicalUrl="https://fithisab.com/calculators/"
+        canonicalUrl="https://fithisab.pages.dev/calculators/"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

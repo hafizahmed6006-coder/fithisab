@@ -12,7 +12,7 @@ export const TermsPage: React.FC<LegalPageProps> = ({ onNavigate }) => {
       <SEOHead
         title="Terms and Conditions - FitHisab"
         description="FitHisab terms and conditions governing website use, intellectual property, and limitations of liability."
-        canonicalUrl="https://fithisab.com/terms/"
+        canonicalUrl="https://fithisab.pages.dev/terms/"
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6">

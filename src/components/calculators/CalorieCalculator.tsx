@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Flame, Sparkles, Target, ArrowRight, Info, AlertCircle, Apple } from 'lucide-react';
+import { Flame, Sparkles, Target, ArrowRight, Info, AlertCircle, Apple, CheckCircle2, HelpCircle } from 'lucide-react';
 import { Breadcrumbs } from '../common/Breadcrumbs';
 import { SEOHead } from '../common/SEOHead';
 import { AdSlot } from '../common/AdSlot';
@@ -59,9 +59,9 @@ export const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({ onNavigate
   return (
     <div className="min-h-screen bg-[#FAFCFA] py-6 sm:py-10">
       <SEOHead
-        title="Daily Calorie Calculator (TDEE & BMR) - Free Macro Targets"
-        description="Calculate your Basal Metabolic Rate (BMR) and Total Daily Energy Expenditure (TDEE). Find the exact calories needed to lose fat, maintain weight, or build muscle."
-        canonicalUrl="https://fithisab.com/calculators/calorie/"
+        title="Daily Calorie Calculator - TDEE, Maintenance & Weight Loss Targets"
+        description="Free daily calorie calculator. Calculate your exact maintenance calories, TDEE, and daily deficit targets for healthy fat loss or muscle gain."
+        canonicalUrl="https://fithisab.pages.dev/calculators/calorie/"
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -82,8 +82,25 @@ export const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({ onNavigate
             Daily Calorie & TDEE Calculator
           </h1>
           <p className="text-sm sm:text-base text-[#64787A] mt-2 leading-relaxed">
-            Uses the scientifically recognized Mifflin-St Jeor formula to determine your maintenance calories and calculate a sustainable, healthy deficit or surplus.
+            Uses the clinically validated Mifflin-St Jeor formula to determine your maintenance calories and calculate a sustainable, healthy deficit or surplus.
           </p>
+
+          {/* Quick Direct Answer Snippet */}
+          <div className="mt-4 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#EAF8F7] to-[#FAFCFA] border-2 border-[#16A6A3]/30 shadow-xs">
+            <div className="flex items-start gap-3">
+              <div className="w-9 h-9 rounded-xl bg-[#087F82] text-white flex items-center justify-center shrink-0 mt-0.5">
+                <CheckCircle2 className="w-5 h-5" />
+              </div>
+              <div>
+                <strong className="text-sm font-bold text-[#0B4F55] block mb-1">
+                  How Daily Calorie Targets Work:
+                </strong>
+                <p className="text-xs sm:text-sm text-[#183438] leading-relaxed">
+                  Your daily calorie needs equal your <strong>Basal Metabolic Rate (BMR)</strong> multiplied by your physical activity level. To lose approximately 0.5 kg (1 lb) of fat per week sustainably, maintain a <strong>500-calorie daily deficit</strong> below your maintenance level (TDEE). Adjusting daily steps or cardio alongside portion control is the safest way to maintain muscle while dropping fat.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Main Card */}
@@ -340,6 +357,88 @@ export const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({ onNavigate
 
           </div>
 
+        </div>
+
+        {/* Daily Calorie FAQ & Informational Section */}
+        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-[#DCEBE9] my-8 space-y-4">
+          <h3 className="text-lg sm:text-xl font-bold text-[#0B4F55] flex items-center gap-2">
+            <HelpCircle className="w-5 h-5 text-[#087F82]" />
+            <span>Frequently Asked Questions: Daily Calorie Calculation</span>
+          </h3>
+
+          <div className="space-y-3 pt-2">
+            <div className="p-4 rounded-xl bg-[#FAFCFA] border border-[#DCEBE9]">
+              <h4 className="text-sm sm:text-base font-bold text-[#183438] mb-1.5 flex items-start gap-2">
+                <span className="text-[#087F82] font-extrabold">Q:</span>
+                <span>How many calories should I eat daily to lose weight?</span>
+              </h4>
+              <p className="text-xs sm:text-sm text-[#64787A] leading-relaxed pl-5">
+                A standard, safe recommendation is a <strong>500-calorie daily deficit</strong> beneath your Total Daily Energy Expenditure (TDEE). This produces a sustainable fat loss rate of roughly 0.5 kg (1 lb) of fat per week without sacrificing lean muscle tissue or slowing down your metabolic rate.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-[#FAFCFA] border border-[#DCEBE9]">
+              <h4 className="text-sm sm:text-base font-bold text-[#183438] mb-1.5 flex items-start gap-2">
+                <span className="text-[#087F82] font-extrabold">Q:</span>
+                <span>What is the difference between BMR and TDEE?</span>
+              </h4>
+              <p className="text-xs sm:text-sm text-[#64787A] leading-relaxed pl-5">
+                <strong>BMR (Basal Metabolic Rate)</strong> is the baseline energy your body burns strictly staying alive at complete rest (breathing, cellular repair, organ function). <strong>TDEE (Total Daily Energy Expenditure)</strong> is your BMR plus all physical movement, digestion (TEF), and daily activities. Your daily calorie intake must be planned relative to your TDEE.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-[#FAFCFA] border border-[#DCEBE9]">
+              <h4 className="text-sm sm:text-base font-bold text-[#183438] mb-1.5 flex items-start gap-2">
+                <span className="text-[#087F82] font-extrabold">Q:</span>
+                <span>What is the minimum safe daily calorie intake?</span>
+              </h4>
+              <p className="text-xs sm:text-sm text-[#64787A] leading-relaxed pl-5">
+                Generally, adult women should rarely consume below 1,200 calories per day, and adult men should rarely consume below 1,500 calories per day without direct clinical supervision, as eating below these thresholds can lead to nutritional deficiencies and metabolic adaptation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Related Health Calculators */}
+        <div className="my-8">
+          <h3 className="text-lg font-bold text-[#0B4F55] mb-4">
+            Related Health Tools & Guides
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <button
+              onClick={() => onNavigate('/calculators/steps-to-km/')}
+              className="bg-white rounded-xl border border-[#DCEBE9] hover:border-[#16A6A3] p-4 text-left transition-all group"
+            >
+              <div className="font-bold text-sm text-[#183438] group-hover:text-[#087F82] mb-1">
+                Steps to KM Calculator
+              </div>
+              <div className="text-xs text-[#64787A]">
+                Calculate exact distance and calorie burn for 10,000 or 5,000 steps.
+              </div>
+            </button>
+            <button
+              onClick={() => onNavigate('/calculators/protein/')}
+              className="bg-white rounded-xl border border-[#DCEBE9] hover:border-[#16A6A3] p-4 text-left transition-all group"
+            >
+              <div className="font-bold text-sm text-[#183438] group-hover:text-[#087F82] mb-1">
+                Protein Calculator
+              </div>
+              <div className="text-xs text-[#64787A]">
+                Optimize daily protein grams for muscle retention during calorie deficits.
+              </div>
+            </button>
+            <button
+              onClick={() => onNavigate('/food-calories/')}
+              className="bg-white rounded-xl border border-[#DCEBE9] hover:border-[#16A6A3] p-4 text-left transition-all group"
+            >
+              <div className="font-bold text-sm text-[#183438] group-hover:text-[#087F82] mb-1">
+                Food Calorie Database
+              </div>
+              <div className="text-xs text-[#64787A]">
+                Accurate calorie counts for roti, chicken biryani, samosa, and paratha.
+              </div>
+            </button>
+          </div>
         </div>
 
         {/* Ad Placement */}

@@ -39,7 +39,7 @@ export const IdealWeightCalculator: React.FC<IdealWeightCalculatorProps> = ({ on
       <SEOHead
         title="Ideal Body Weight (IBW) Calculator - Devine & Robinson Formulas"
         description="Calculate your Ideal Body Weight using verified clinical formulas (Devine, Robinson, Miller) and South Asian healthy BMI ranges."
-        canonicalUrl="https://fithisab.com/calculators/ideal-weight/"
+        canonicalUrl="https://fithisab.pages.dev/calculators/ideal-weight/"
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6">

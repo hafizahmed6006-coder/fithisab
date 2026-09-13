@@ -13,7 +13,7 @@ export const PrivacyPolicyPage: React.FC<LegalPageProps> = ({ onNavigate }) => {
       <SEOHead
         title="Privacy Policy - FitHisab"
         description="FitHisab privacy policy covering cookie policies, client-side data handling, third-party advertising, and analytics."
-        canonicalUrl="https://fithisab.com/privacy-policy/"
+        canonicalUrl="https://fithisab.pages.dev/privacy-policy/"
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6">

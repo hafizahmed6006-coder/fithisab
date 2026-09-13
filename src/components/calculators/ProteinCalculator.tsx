@@ -50,7 +50,7 @@ export const ProteinCalculator: React.FC<ProteinCalculatorProps> = ({ onNavigate
       <SEOHead
         title="Protein Calculator - Daily Grams Target & Desi Food Sources"
         description="Calculate your daily protein intake based on body weight and fitness goals. See practical South Asian meal distributions and food equivalents."
-        canonicalUrl="https://fithisab.com/calculators/protein/"
+        canonicalUrl="https://fithisab.pages.dev/calculators/protein/"
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6">

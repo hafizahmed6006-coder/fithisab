@@ -94,7 +94,7 @@ export const BMICalculator: React.FC<BMICalculatorProps> = ({ onNavigate }) => {
       <SEOHead
         title="BMI Calculator - South Asian & WHO Standard Cut-Offs"
         description="Free online Body Mass Index (BMI) calculator with specialized South Asian criteria. Calculate healthy weight ranges and understand your cardiometabolic risk."
-        canonicalUrl="https://fithisab.com/calculators/bmi/"
+        canonicalUrl="https://fithisab.pages.dev/calculators/bmi/"
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6">

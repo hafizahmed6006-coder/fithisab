@@ -13,7 +13,7 @@ export const DisclaimerPage: React.FC<LegalPageProps> = ({ onNavigate }) => {
       <SEOHead
         title="Medical & Health Disclaimer - FitHisab"
         description="FitHisab medical and nutritional disclaimer. Understand how our calculations, estimates, and food values are designed for general educational use."
-        canonicalUrl="https://fithisab.com/disclaimer/"
+        canonicalUrl="https://fithisab.pages.dev/disclaimer/"
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6">

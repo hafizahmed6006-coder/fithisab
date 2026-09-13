@@ -19,7 +19,7 @@ export const RecipeDetailPage: React.FC<RecipeDetailPageProps> = ({ slug, onNavi
       <SEOHead
         title={`${recipe.title} - FitHisab Clean Desi Recipes`}
         description={recipe.description || `Healthy, high-protein ${recipe.title} with ${recipe.caloriesPerServing} kcal and ${recipe.proteinPerServing}g protein.`}
-        canonicalUrl={`https://fithisab.com/recipes/${recipe.slug}/`}
+        canonicalUrl={`https://fithisab.pages.dev/recipes/${recipe.slug}/`}
         imageUrl={recipe.image}
       />
 

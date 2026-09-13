@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Flame, Utensils, CheckCircle2, AlertCircle, ArrowRight, Footprints, Clock, Scale } from 'lucide-react';
+import { Flame, Utensils, CheckCircle2, AlertCircle, ArrowRight, Footprints, Clock, Scale, HelpCircle, Layers } from 'lucide-react';
 import { Breadcrumbs } from '../common/Breadcrumbs';
 import { SEOHead } from '../common/SEOHead';
 import { AdSlot } from '../common/AdSlot';
@@ -50,7 +50,7 @@ export const FoodDetailPage: React.FC<FoodDetailPageProps> = ({ slug, onNavigate
       <SEOHead
         title={food.seoTitle || `Calories in ${food.name} - FitHisab`}
         description={food.seoDesc || `Discover exact calories, protein, carbs, and fat in ${food.name}. Interactive portion size calculator and walking burn time.`}
-        canonicalUrl={`https://fithisab.com/food-calories/${food.slug}/`}
+        canonicalUrl={`https://fithisab.pages.dev/food-calories/${food.slug}/`}
         imageUrl={food.image}
         articleData={{
           datePublished: '2026-01-10T08:00:00Z',
@@ -299,6 +299,76 @@ export const FoodDetailPage: React.FC<FoodDetailPageProps> = ({ slug, onNavigate
             <p className="text-sm text-[#64787A] leading-relaxed">
               {food.comparison}
             </p>
+          </div>
+        )}
+
+        {/* Serving Size Variations & Portions Table */}
+        {food.variations && food.variations.length > 0 && (
+          <div className="bg-white rounded-2xl p-6 sm:p-8 border border-[#DCEBE9] my-8 space-y-4">
+            <div className="flex items-center justify-between">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0B4F55] flex items-center gap-2">
+                <Layers className="w-5 h-5 text-[#087F82]" />
+                <span>Serving Size & Preparation Variations</span>
+              </h3>
+              <span className="text-xs text-[#64787A] font-medium hidden sm:inline">
+                Portion-controlled reference
+              </span>
+            </div>
+            <p className="text-xs sm:text-sm text-[#64787A] leading-relaxed">
+              Calories and macronutrients differ considerably based on preparation method, dough size, and fat used. All calorie values are approximate estimates:
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs sm:text-sm border border-[#DCEBE9] rounded-xl overflow-hidden">
+                <thead className="bg-[#EAF8F7] text-[#0B4F55] font-bold">
+                  <tr>
+                    <th className="p-3">Variation / Portion</th>
+                    <th className="p-3">Calories</th>
+                    <th className="p-3">Protein</th>
+                    <th className="p-3">Carbs</th>
+                    <th className="p-3">Fats</th>
+                    <th className="p-3">Nutritional Notes</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#DCEBE9]">
+                  {food.variations.map((v, i) => (
+                    <tr key={i} className="hover:bg-[#FAFCFA] transition-colors">
+                      <td className="p-3 font-bold text-[#183438]">{v.name}</td>
+                      <td className="p-3 font-extrabold text-[#087F82]">{v.calories} kcal</td>
+                      <td className="p-3 text-[#183438]">{v.protein}g</td>
+                      <td className="p-3 text-[#183438]">{v.carbs}g</td>
+                      <td className="p-3 text-[#183438]">{v.fats}g</td>
+                      <td className="p-3 text-xs text-[#64787A]">{v.notes}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-[11px] text-[#64787A] italic">
+              Note: Exact calorie values vary depending on recipe ingredients, dough weight, cooking oil brand, and household preparation styles.
+            </p>
+          </div>
+        )}
+
+        {/* Frequently Asked Questions */}
+        {food.faqs && food.faqs.length > 0 && (
+          <div className="bg-white rounded-2xl p-6 sm:p-8 border border-[#DCEBE9] my-8 space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-[#0B4F55] flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-[#087F82]" />
+              <span>Frequently Asked Questions About {food.name}</span>
+            </h3>
+            <div className="space-y-3 pt-2">
+              {food.faqs.map((faq, idx) => (
+                <div key={idx} className="p-4 rounded-xl bg-[#FAFCFA] border border-[#DCEBE9]">
+                  <h4 className="text-sm sm:text-base font-bold text-[#183438] mb-1.5 flex items-start gap-2">
+                    <span className="text-[#087F82] font-extrabold">Q:</span>
+                    <span>{faq.question}</span>
+                  </h4>
+                  <p className="text-xs sm:text-sm text-[#64787A] leading-relaxed pl-5">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         )}
 

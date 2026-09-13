@@ -186,7 +186,7 @@ export default function App() {
         <SEOHead
           title="FitHisab - Smart Fitness Calculators & South Asian Food Calories"
           description="Calculate your BMI with South Asian criteria, daily calorie needs, protein requirements, and steps to kilometers. Accurate calories in roti, biryani, daal, and everyday foods."
-          canonicalUrl="https://fithisab.com/"
+          canonicalUrl="https://fithisab.pages.dev/"
         />
 
         {/* Hero Section */}

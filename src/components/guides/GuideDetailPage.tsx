@@ -21,7 +21,7 @@ export const GuideDetailPage: React.FC<GuideDetailPageProps> = ({ slug, onNaviga
       <SEOHead
         title={`${guide.title} - FitHisab`}
         description={guide.excerpt}
-        canonicalUrl={`https://fithisab.com/guides/${guide.slug}/`}
+        canonicalUrl={`https://fithisab.pages.dev/guides/${guide.slug}/`}
         imageUrl={guide.image}
         articleData={{
           datePublished: guide.date,

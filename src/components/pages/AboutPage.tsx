@@ -13,7 +13,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       <SEOHead
         title="About FitHisab - Practical Health & South Asian Nutrition"
         description="Learn about FitHisab's mission: providing free, scientifically grounded fitness calculators and everyday South Asian food calorie transparency."
-        canonicalUrl="https://fithisab.com/about/"
+        canonicalUrl="https://fithisab.pages.dev/about/"
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6">

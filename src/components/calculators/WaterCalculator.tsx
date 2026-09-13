@@ -33,7 +33,7 @@ export const WaterCalculator: React.FC<WaterCalculatorProps> = ({ onNavigate }) 
       <SEOHead
         title="Water Intake Calculator - Daily Hydration & Glass Count"
         description="Calculate your optimal daily water intake based on body weight, daily exercise time, and hot climate factors. Keep your metabolism running smoothly."
-        canonicalUrl="https://fithisab.com/calculators/water/"
+        canonicalUrl="https://fithisab.pages.dev/calculators/water/"
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6">

@@ -11,6 +11,9 @@ export const FOODS_DATA: FoodItem[] = [
     urduName: 'روٹی / چپاتی',
     category: 'Breads & Grains',
     image: rotiImg,
+    seoTitle: 'Calories in Roti (1 Roti, 2 Roti, With & Without Ghee) - FitHisab',
+    seoDesc: 'Accurate calories in 1 roti, 2 roti, and roti without ghee. Serving size table, exact carbs, protein, and fat breakdown for home-cooked whole wheat chapati.',
+    quickAnswer: '1 medium whole wheat roti without ghee (approx 50g dough) contains approximately 120 calories (3.5g protein, 24g carbs, 0.8g fat). Eating 2 rotis without ghee provides ~240 calories. Adding 1 tsp ghee increases 1 roti to ~165 kcal, and 2 rotis with ghee to ~330 kcal.',
     typicalServing: '1 medium plain chapati (no oil/ghee)',
     servingGrams: 50,
     calories: 120,
@@ -20,18 +23,23 @@ export const FOODS_DATA: FoodItem[] = [
     fiber: 3.2,
     description: 'Freshly puffed whole-wheat flatbread cooked dry on a traditional tawa. A staple carb in South Asian diets providing complex carbohydrates, magnesium, and dietary fiber.',
     variations: [
-      { name: 'Small Tawa Roti (35g)', calories: 85, protein: 2.5, carbs: 17, fats: 0.5, notes: 'Home cooked thin phulka' },
-      { name: 'Medium Tawa Roti (50g)', calories: 120, protein: 3.5, carbs: 24, fats: 0.8, notes: 'Standard 6 to 7-inch whole wheat roti' },
-      { name: 'Large Restaurant Roti (70g)', calories: 170, protein: 5.0, carbs: 34, fats: 1.1, notes: 'Thicker dough ball common in eateries' },
-      { name: 'Roti with 1 tsp Ghee/Butter', calories: 165, protein: 3.5, carbs: 24, fats: 5.3, notes: 'Adds ~45 calories purely from fat' },
-      { name: 'Tandoori Roti (Plain)', calories: 140, protein: 4.2, carbs: 28, fats: 0.9, notes: 'Baked on clay tandoor wall' }
+      { name: '1 Roti Without Ghee (50g medium)', calories: 120, protein: 3.5, carbs: 24, fats: 0.8, notes: 'Standard dry tawa chapati / phulka' },
+      { name: '2 Roti Without Ghee (100g total)', calories: 240, protein: 7.0, carbs: 48, fats: 1.6, notes: 'Common home meal portion for lunch or dinner' },
+      { name: '1 Small Phulka Without Ghee (35g)', calories: 85, protein: 2.5, carbs: 17, fats: 0.5, notes: 'Thin, light home-cooked roti' },
+      { name: '1 Roti With 1 tsp Desi Ghee', calories: 165, protein: 3.5, carbs: 24, fats: 5.3, notes: 'Adds 45 calories and 4.5g fat from ghee' },
+      { name: '2 Roti With Desi Ghee', calories: 330, protein: 7.0, carbs: 48, fats: 10.6, notes: 'Each brushed with 1 tsp desi ghee' },
+      { name: '1 Large Restaurant Tandoori Roti (70g)', calories: 170, protein: 5.0, carbs: 34, fats: 1.1, notes: 'Thicker dough ball baked dry on tandoor' }
     ],
-    oilImpact: 'A plain tawa roti has under 1 gram of fat. Applying just 1 small teaspoon of desi ghee or butter adds 45 kcal. Two ghee-topped rotis add 90 extra calories with minimal satiety increase.',
+    oilImpact: 'A plain tawa roti without ghee has under 1 gram of fat and ~120 calories. Applying just 1 small teaspoon of desi ghee or butter adds 45 kcal. Two ghee-topped rotis add 90 extra calories with minimal satiety increase.',
     healthTip: 'Choose whole grain chakki atta with bran intact rather than refined white maida for sustained energy and better blood sugar control.',
     faqs: [
       {
-        question: 'How many calories are in 1 standard roti?',
-        answer: 'One standard home-cooked medium whole wheat roti (around 50g of dough) without oil or ghee has approximately 115 to 125 calories, with 3.5g protein, 24g complex carbohydrates, and 3g dietary fiber.'
+        question: 'How many calories are in 1 roti without ghee?',
+        answer: 'One standard home-cooked medium whole wheat roti (around 50g dough) cooked dry without ghee contains approximately 115 to 125 calories, with 3.5g protein, 24g complex carbohydrates, and under 1g fat.'
+      },
+      {
+        question: 'How many calories are in 2 roti?',
+        answer: 'Two standard whole wheat rotis without ghee provide approximately 240 calories (7g protein, 48g carbs, 1.6g fat). If both rotis are brushed with 1 tsp of desi ghee or butter each, the total increases to approximately 330 calories.'
       },
       {
         question: 'Does applying ghee on roti cause weight gain?',
@@ -50,6 +58,9 @@ export const FOODS_DATA: FoodItem[] = [
     urduName: 'چکن بریانی',
     category: 'Rice Dishes',
     image: biryaniImg,
+    seoTitle: 'Calories in 1 Plate Chicken Biryani - Portion & Macros | FitHisab',
+    seoDesc: 'Calories in 1 plate chicken biryani (home vs restaurant). Complete nutritional facts, serving size guide, protein, carbs, and walking burn time.',
+    quickAnswer: '1 standard home-cooked plate of chicken biryani (approx 350g, with 1 chicken piece) contains approximately 520 calories, 26g protein, 68g carbs, and 16g fat. In contrast, heavy restaurant or commercial biryani with extra oil and fried potatoes averages 750 to 900 calories per full plate.',
     typicalServing: '1 standard dining plate (350g) with 1 chicken piece',
     servingGrams: 350,
     calories: 520,
@@ -59,26 +70,26 @@ export const FOODS_DATA: FoodItem[] = [
     fiber: 2.5,
     description: 'Fragrant basmati rice layered with spiced marinated chicken, caramelized onions (birista), yogurt, and aromatic saffron spices. Nutrient-dense with substantial protein from chicken, but calorie density depends heavily on the cooking oil used.',
     variations: [
-      { name: '1 Measuring Cup (150g)', calories: 230, protein: 11, carbs: 30, fats: 7, notes: 'Snack or light lunch portion' },
-      { name: '1 Standard Plate (350g with 1 leg/breast)', calories: 520, protein: 26, carbs: 68, fats: 16, notes: 'Typical home serving' },
-      { name: 'Large Restaurant Serving (500g)', calories: 780, protein: 34, carbs: 98, fats: 28, notes: 'Heavy oil and fried potato included' },
-      { name: 'Sindhi Biryani with Aloo (400g)', calories: 610, protein: 24, carbs: 82, fats: 20, notes: 'Potato absorbs cooking oils' },
-      { name: 'Lean Homemade Chicken Biryani (300g)', calories: 410, protein: 28, carbs: 55, fats: 8, notes: 'Cooked with breast fillet and 1 tbsp oil total' }
+      { name: '1 Standard Plate Homemade Chicken Biryani (350g)', calories: 520, protein: 26, carbs: 68, fats: 16, notes: 'Typical home plate with 1 chicken piece' },
+      { name: '1 Measuring Cup of Biryani (150g)', calories: 230, protein: 11, carbs: 30, fats: 7, notes: 'Portion-controlled snack or light lunch' },
+      { name: '1 Restaurant / Commercial Plate (450g-500g)', calories: 780, protein: 34, carbs: 98, fats: 28, notes: 'Cooked with heavy oil, ghee, and fried potato' },
+      { name: '1 Plate Sindhi Biryani with Aloo (400g)', calories: 610, protein: 24, carbs: 82, fats: 20, notes: 'Spiced rice with potato absorbing cooking fat' },
+      { name: '1 Plate Lean Homemade Chicken Biryani (300g)', calories: 410, protein: 28, carbs: 55, fats: 8, notes: 'Cooked with breast fillet and 1 tbsp oil total' }
     ],
     oilImpact: 'Commercial restaurant biryanis use 3 to 4 tablespoons of oil or banaspati ghee per plate, adding 250+ empty fat calories. Homemade biryani with measured olive oil or mustard oil cuts total calories by 30%.',
     healthTip: 'Eat biryani with a large bowl of fresh chopped cucumber-tomato salad and skim yogurt raita. Start by eating the protein (chicken) first to trigger satiety hormones.',
     faqs: [
       {
         question: 'How many calories are in 1 plate of chicken biryani?',
-        answer: 'A standard home-cooked plate of chicken biryani (around 350g, including 1 piece of chicken) contains approximately 480 to 550 calories. Restaurant or wedding-style biryanis with heavy oil and fried potatoes frequently reach 750 to 900 calories.'
+        answer: 'One standard home-cooked plate of chicken biryani (around 350g, including 1 piece of chicken) contains approximately 480 to 550 calories (approx. 520 kcal on average). Commercial or wedding-style biryanis with heavy oil and fried potatoes frequently reach 750 to 900 calories.'
       },
       {
         question: 'Can I eat biryani while trying to lose weight?',
         answer: 'Yes! Measure your portion to 1 cup of rice (approx 200 kcal), choose skinless chicken breast for lean protein (120 kcal), and fill half your plate with fresh cucumber and onion salad.'
       },
       {
-        question: 'How much protein is in chicken biryani?',
-        answer: 'One standard serving with a 100g cooked chicken piece contains approximately 24 to 28 grams of high-quality complete protein.'
+        question: 'How much protein is in 1 plate of chicken biryani?',
+        answer: 'One standard plate of chicken biryani with a 100g cooked chicken piece contains approximately 24 to 28 grams of high-quality complete protein.'
       }
     ]
   },
@@ -89,6 +100,9 @@ export const FOODS_DATA: FoodItem[] = [
     urduName: 'آلو سموسہ',
     category: 'Snacks & Sweets',
     image: samosaImg,
+    seoTitle: 'Calories in 1 Samosa (Aloo, Keema, Air-Fried) - FitHisab',
+    seoDesc: 'Accurate calories in 1 samosa (aloo, meat, and air-fried). Check exact fat, carbs, serving sizes, and walking steps needed to burn off 1 samosa.',
+    quickAnswer: '1 standard medium deep-fried aloo samosa (approx 90g) contains approximately 260 calories, 4.2g protein, 28g carbs, and 15g fat. Eating 2 aloo samosas provides ~520 calories. Air-frying reduces calories to ~155 kcal by cutting 75% of absorbed oil.',
     typicalServing: '1 medium fried aloo samosa',
     servingGrams: 90,
     calories: 260,
@@ -98,21 +112,26 @@ export const FOODS_DATA: FoodItem[] = [
     fiber: 2.1,
     description: 'Crisp, triangular pastry shell stuffed with spiced mashed potatoes, cumin, coriander, and green peas, deep-fried in vegetable oil or vanaspati ghee.',
     variations: [
-      { name: '1 Medium Aloo Samosa (90g)', calories: 260, protein: 4.2, carbs: 28, fats: 15, notes: 'Classic street food samosa' },
-      { name: '1 Keema / Mutton Samosa (80g)', calories: 240, protein: 8.5, carbs: 19, fats: 14, notes: 'Higher protein, minced meat filling' },
-      { name: 'Mini Cocktail Samosa (35g)', calories: 110, protein: 2.0, carbs: 12, fats: 6, notes: 'Party appetizer size' },
-      { name: 'Air-Fried / Baked Samosa (90g)', calories: 155, protein: 4.5, carbs: 27, fats: 3.5, notes: 'Brush with 1 tsp oil, saves over 100 kcal' }
+      { name: '1 Medium Deep-Fried Aloo Samosa (90g)', calories: 260, protein: 4.2, carbs: 28, fats: 15, notes: 'Classic street stall snack' },
+      { name: '2 Medium Aloo Samosas (180g total)', calories: 520, protein: 8.4, carbs: 56, fats: 30, notes: 'Equivalent calories to a full dining meal' },
+      { name: '1 Keema / Mutton Samosa (80g)', calories: 240, protein: 8.5, carbs: 19, fats: 14, notes: 'Higher protein, spiced minced meat filling' },
+      { name: '1 Mini Cocktail Samosa (35g)', calories: 110, protein: 2.0, carbs: 12, fats: 6, notes: 'Small party appetizer' },
+      { name: '1 Air-Fried / Baked Aloo Samosa (90g)', calories: 155, protein: 4.5, carbs: 27, fats: 3.5, notes: 'Brushed lightly with 1 tsp oil; saves over 100 kcal' }
     ],
     oilImpact: 'The flour crust absorbs up to 15g of oil during deep-frying at standard street stall temperatures. Air-frying reduces fat content by over 70%.',
     healthTip: 'Pair samosas with mint-coriander yogurt chutney rather than sugary tamarind-gur sauce to avoid unnecessary simple sugars.',
     faqs: [
       {
-        question: 'How many calories are in 1 aloo samosa?',
-        answer: 'One standard medium deep-fried potato samosa contains roughly 250 to 280 calories and 14-16 grams of fat. Two samosas provide over 500 calories, equivalent to an entire full meal.'
+        question: 'How many calories are in 1 samosa?',
+        answer: 'One standard medium deep-fried potato samosa (90g) contains approximately 250 to 280 calories (averaging 260 kcal) and 15g of fat. Two samosas provide over 520 calories, matching an entire lunch meal.'
       },
       {
         question: 'How much exercise burns off 1 samosa?',
-        answer: 'Burning 260 calories requires approximately 5,500 to 6,000 steps of brisk walking (about 45 to 55 minutes) for a 70 kg individual.'
+        answer: 'Burning off the 260 calories in 1 aloo samosa requires approximately 5,500 to 6,000 steps of brisk walking (about 45 to 55 minutes) for a 70 kg adult.'
+      },
+      {
+        question: 'Is keema samosa healthier than aloo samosa?',
+        answer: 'A keema (minced chicken or mutton) samosa has slightly fewer carbohydrates (19g vs 28g) and double the protein (8.5g vs 4.2g), but remains calorie-dense (240 kcal) due to deep-frying oil.'
       }
     ]
   },
@@ -191,6 +210,9 @@ export const FOODS_DATA: FoodItem[] = [
     urduName: 'سادہ توا پراٹھا',
     category: 'Breads & Grains',
     image: 'https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=800&q=80',
+    seoTitle: 'Calories in 1 Paratha (Plain, Ghee, Aloo, Lachha) - FitHisab',
+    seoDesc: 'Accurate calories in 1 plain paratha, ghee paratha, and stuffed varieties. Serving size table, macronutrients, and oil impact comparison vs roti.',
+    quickAnswer: '1 standard home-cooked plain paratha (approx 80g dough shallow-fried with 1 tbsp ghee or oil) contains approximately 290 calories, 5.2g protein, 34g carbs, and 14.5g fat. A light homemade paratha made with minimal oil is ~220 calories, whereas restaurant lachha parathas often exceed 400 calories.',
     typicalServing: '1 medium layered flaky paratha',
     servingGrams: 80,
     calories: 290,
@@ -200,17 +222,22 @@ export const FOODS_DATA: FoodItem[] = [
     fiber: 3.4,
     description: 'Flaky, layered flatbread made with whole wheat flour rolled with ghee/oil inside the dough layers and shallow-fried on a tawa.',
     variations: [
-      { name: 'Light Home Paratha (1 tsp oil, 70g)', calories: 220, protein: 4.8, carbs: 30, fats: 9, notes: 'Moderate oil used' },
-      { name: 'Crisp Desi Ghee Paratha (80g)', calories: 310, protein: 5.2, carbs: 34, fats: 17, notes: 'Flaky layers saturated with ghee' },
-      { name: 'Stuffed Aloo Paratha (120g)', calories: 340, protein: 6.0, carbs: 46, fats: 15, notes: 'Spiced potato mash stuffing' },
-      { name: 'Market Fried Lachha Paratha (100g)', calories: 410, protein: 6.5, carbs: 45, fats: 23, notes: 'Maida flour + deep pan fried' }
+      { name: '1 Medium Plain Tawa Paratha (80g)', calories: 290, protein: 5.2, carbs: 34, fats: 14.5, notes: 'Standard home-cooked flaky layered paratha' },
+      { name: '1 Light Home Paratha (1 tsp oil, 70g)', calories: 220, protein: 4.8, carbs: 30, fats: 9, notes: 'Portion-controlled with measured oil' },
+      { name: '1 Crisp Desi Ghee Paratha (80g)', calories: 310, protein: 5.2, carbs: 34, fats: 17, notes: 'Flaky layers saturated with pure desi ghee' },
+      { name: '1 Stuffed Aloo Paratha (120g)', calories: 340, protein: 6.0, carbs: 46, fats: 15, notes: 'Whole wheat dough with spiced potato filling' },
+      { name: '1 Restaurant Lachha Paratha (100g)', calories: 410, protein: 6.5, carbs: 45, fats: 23, notes: 'Refined flour (maida) + deep griddle fried' }
     ],
     oilImpact: 'A plain roti is 120 calories, whereas a traditional layered paratha is 290–320 calories. The extra 170–200 calories come entirely from cooking fat.',
     healthTip: 'For breakfast lovers: replace daily parathas with boiled eggs and dry tawa roti, or try a dry roasted paratha brushed with half a teaspoon of olive oil right before serving.',
     faqs: [
       {
-        question: 'How many calories are in 1 plain paratha?',
-        answer: 'One standard home-cooked plain paratha (approx 80g) shallow fried with 1 tablespoon of ghee or oil contains 280 to 310 calories. Restaurant flaky lachha parathas can easily exceed 400 calories.'
+        question: 'How many calories are in 1 paratha?',
+        answer: 'One standard home-cooked plain paratha (approx 80g) shallow fried with 1 tablespoon of ghee or oil contains 280 to 310 calories (average 290 kcal), with 5.2g protein and 14.5g fat. By contrast, a dry roti has only 120 calories.'
+      },
+      {
+        question: 'How many calories are in 2 parathas?',
+        answer: 'Two plain home-cooked parathas contain approximately 580 to 620 calories and nearly 30g of fat, which fulfills roughly 30% of an adult\'s daily caloric requirements in a single breakfast.'
       },
       {
         question: 'Can I eat paratha while dieting?',
@@ -225,6 +252,9 @@ export const FOODS_DATA: FoodItem[] = [
     urduName: 'دودھ پتی چائے',
     category: 'Beverages & Dairy',
     image: 'https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?auto=format&fit=crop&w=800&q=80',
+    seoTitle: 'Calories in 1 Cup Chai (Milk Tea, Doodh Patti, No Sugar) - FitHisab',
+    seoDesc: 'Find exact calories in 1 cup chai, doodh patti, and sugar-free milk tea. Serving size comparison table, milk fat impact, and healthy weight loss tips.',
+    quickAnswer: '1 standard cup of chai (approx 180ml with whole buffalo or cow milk and 1.5 tsp sugar) contains approximately 135 calories, 4.1g protein, 16g carbs, and 6.2g fat. A rich full-milk doodh patti reaches ~190 kcal, whereas unsweetened skim milk tea is only ~45 kcal.',
     typicalServing: '1 standard cup (180ml) with whole milk and 1.5 tsp sugar',
     servingGrams: 180,
     calories: 135,
@@ -234,17 +264,22 @@ export const FOODS_DATA: FoodItem[] = [
     fiber: 0,
     description: 'Traditional South Asian brewed black tea simmered with milk, cardamom, and refined sugar. A ubiquitous daily beverage consumed 2 to 4 times a day.',
     variations: [
-      { name: 'Black Tea (No Milk, No Sugar, 200ml)', calories: 2, protein: 0, carbs: 0.5, fats: 0, notes: 'Zero calorie beverage' },
-      { name: 'Skim Milk Chai, No Sugar (180ml)', calories: 45, protein: 3.8, carbs: 5, fats: 0.5, notes: 'Weight-loss friendly option' },
-      { name: 'Half Milk / Half Water with 1 tsp Sugar', calories: 85, protein: 2.8, carbs: 9, fats: 3.5, notes: 'Balanced everyday cup' },
-      { name: 'Traditional Doodh Patti (Full Milk + 2 tsp sugar)', calories: 190, protein: 6.2, carbs: 22, fats: 8.8, notes: 'Made entirely with whole milk and boiled down' }
+      { name: '1 Standard Cup Milk Tea (Whole Milk + 1.5 tsp Sugar, 180ml)', calories: 135, protein: 4.1, carbs: 16, fats: 6.2, notes: 'Everyday standard household cup' },
+      { name: '1 Cup Traditional Doodh Patti (Pure Whole Milk + 2 tsp Sugar)', calories: 190, protein: 6.2, carbs: 22, fats: 8.8, notes: 'No water added; brewed purely in whole milk' },
+      { name: '1 Cup Balanced Chai (Half Milk / Half Water + 1 tsp Sugar)', calories: 85, protein: 2.8, carbs: 9, fats: 3.5, notes: 'Lighter everyday style' },
+      { name: '1 Cup Skim Milk Chai (No Sugar, 180ml)', calories: 45, protein: 3.8, carbs: 5, fats: 0.5, notes: 'Weight-loss friendly high protein option' },
+      { name: '1 Cup Plain Black Tea (No Milk, No Sugar, 200ml)', calories: 2, protein: 0, carbs: 0.5, fats: 0, notes: 'Virtually zero calorie beverage' }
     ],
     oilImpact: 'Whole buffalo milk commonly used in Pakistan has 6-7% fat. Drinking 3 cups of doodh patti with 2 spoons of sugar equals ~550 daily calories—an invisible calorie culprit!',
     healthTip: 'Switching to stevia or half-teaspoon sugar and low-fat milk saves over 100 calories per cup. If you drink 3 cups a day, that is 300 calories saved daily.',
     faqs: [
       {
         question: 'How many calories are in 1 cup of chai?',
-        answer: 'A regular cup of milk tea with whole milk and 1.5 tsp of sugar has 120 to 140 calories. A rich "doodh patti" made with pure whole milk and 2 teaspoons of sugar contains around 180 to 200 calories.'
+        answer: 'One standard cup of chai (180ml) made with whole milk and 1.5 teaspoons of sugar contains approximately 130 to 140 calories. Rich doodh patti made entirely without water contains around 180 to 200 calories per cup.'
+      },
+      {
+        question: 'How many calories are in 1 cup chai without sugar?',
+        answer: 'A standard cup of tea with whole milk but no sugar has approximately 80 to 95 calories. If made with skim milk and no sugar, it has only 40 to 45 calories.'
       },
       {
         question: 'Why is chai making me gain weight?',
