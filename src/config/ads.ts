@@ -10,12 +10,13 @@
 export interface AdSlotConfig {
   id: string;
   name: string;
-  format: 'banner-728x90' | 'banner-300x250' | 'banner-responsive' | 'in-article';
+  format: 'banner-728x90' | 'banner-300x250' | 'banner-responsive' | 'in-article' | 'native';
   minHeight: number;
   width?: number;
   height?: number;
   adsterraKey?: string;
   scriptUrl?: string;
+  containerId?: string;
   adsterraFormatCode?: string;
 }
 
@@ -64,6 +65,14 @@ export const ADS_CONFIG = {
       height: 250,
       adsterraKey: '935f0d7c7792bd4183368994249d97ff',
       scriptUrl: 'https://www.highrevenueformat.com/935f0d7c7792bd4183368994249d97ff/invoke.js',
+    },
+    NATIVE_BANNER: {
+      id: 'ad-native-banner',
+      name: 'Native Sponsored Banner',
+      format: 'native' as const,
+      minHeight: 120,
+      containerId: 'container-a68b68302320047f6927ccf96142b758',
+      scriptUrl: 'https://pl31329293.profitableratecpmnetwork.com/a68b68302320047f6927ccf96142b758/invoke.js',
     },
     SIDEBAR_STICKY: {
       id: 'ad-sidebar-sticky',

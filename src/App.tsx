@@ -212,6 +212,9 @@ export default function App() {
         {/* Healthy Desi Recipes Section */}
         <RecipesSection onNavigate={navigate} />
 
+        {/* Native Sponsored Recommendations Banner */}
+        <AdSlot slot={ADS_CONFIG.SLOTS.NATIVE_BANNER} />
+
         {/* Why FitHisab Scientific Benefits */}
         <WhyFitHisab />
 
