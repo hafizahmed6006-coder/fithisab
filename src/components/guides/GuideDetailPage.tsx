@@ -87,9 +87,6 @@ export const GuideDetailPage: React.FC<GuideDetailPageProps> = ({ slug, onNaviga
             />
           </div>
 
-          {/* Ad Slot */}
-          <AdSlot slot={ADS_CONFIG.SLOTS.IN_ARTICLE_TOP} />
-
           {/* Markdown / Body Content */}
           <div className="prose prose-teal max-w-none text-[#183438] space-y-5 my-8 text-base sm:text-lg leading-relaxed">
             {contentParagraphs.map((paragraph, index) => {

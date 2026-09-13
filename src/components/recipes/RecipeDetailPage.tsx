@@ -100,8 +100,6 @@ export const RecipeDetailPage: React.FC<RecipeDetailPageProps> = ({ slug, onNavi
           </div>
         </div>
 
-        <AdSlot slot={ADS_CONFIG.SLOTS.IN_ARTICLE_TOP} />
-
         {/* Ingredients & Instructions */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
           

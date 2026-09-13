@@ -192,11 +192,6 @@ export default function App() {
         {/* Hero Section */}
         <Hero onNavigate={navigate} />
 
-        {/* Top Monetization Placement */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-4">
-          <AdSlot slot={ADS_CONFIG.SLOTS.HEADER_LEADERBOARD} />
-        </div>
-
         {/* Popular Fitness Calculators */}
         <PopularCalculators onNavigate={navigate} />
 

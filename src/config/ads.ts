@@ -12,16 +12,19 @@ export interface AdSlotConfig {
   name: string;
   format: 'banner-728x90' | 'banner-300x250' | 'banner-responsive' | 'in-article';
   minHeight: number;
+  width?: number;
+  height?: number;
   adsterraKey?: string;
+  scriptUrl?: string;
   adsterraFormatCode?: string;
 }
 
 export const ADS_CONFIG = {
-  // Set to true once Adsterra codes are pasted
-  ENABLED: false,
+  // Activated for live Adsterra monetization
+  ENABLED: true,
   
-  // Show clean development placeholder for visual layout verification
-  SHOW_CLEAN_PLACEHOLDER: true,
+  // Only show placeholder if ads are disabled or key is missing during local layout testing
+  SHOW_CLEAN_PLACEHOLDER: false,
 
   SLOTS: {
     HEADER_LEADERBOARD: {
@@ -36,7 +39,7 @@ export const ADS_CONFIG = {
       name: 'Leaderboard Below Hero',
       format: 'banner-responsive' as const,
       minHeight: 90,
-      adsterraKey: '', // e.g. 'YOUR_ADSTERRA_KEY_HERE'
+      adsterraKey: '',
     },
     BETWEEN_SECTIONS: {
       id: 'ad-between-sections',
@@ -57,13 +60,18 @@ export const ADS_CONFIG = {
       name: 'In-Article Content Rectangle',
       format: 'banner-300x250' as const,
       minHeight: 250,
-      adsterraKey: '',
+      width: 300,
+      height: 250,
+      adsterraKey: '935f0d7c7792bd4183368994249d97ff',
+      scriptUrl: 'https://www.highrevenueformat.com/935f0d7c7792bd4183368994249d97ff/invoke.js',
     },
     SIDEBAR_STICKY: {
       id: 'ad-sidebar-sticky',
       name: 'Desktop Sidebar Banner',
       format: 'banner-300x250' as const,
       minHeight: 250,
+      width: 300,
+      height: 250,
       adsterraKey: '',
     },
     FOOTER_ABOVE: {
