@@ -1,46 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+  <!-- 1. Homepage -->
   <url>
     <loc>https://fithisab.pages.dev/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- 2. Fitness Calculators -->
   <url>
     <loc>https://fithisab.pages.dev/calculators/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://fithisab.pages.dev/calculators/bmi/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://fithisab.pages.dev/calculators/calorie/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://fithisab.pages.dev/calculators/protein/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://fithisab.pages.dev/calculators/steps-to-km/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://fithisab.pages.dev/calculators/ideal-weight/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/calculators/water/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- 3. Food Calories Hub & Detail Pages -->
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/roti/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/biryani/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/samosa/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/rice/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/daal/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/paratha/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/chai/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/chicken-curry/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/boiled-egg/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/banana/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/apple/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/dates/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/nihari/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/food-calories/haleem/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 4. Walking & Steps Tool -->
+  <url>
+    <loc>https://fithisab.pages.dev/walking/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 5. Fitness & Nutrition Guides -->
+  <url>
+    <loc>https://fithisab.pages.dev/guides/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/guides/how-many-calories-per-day/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/guides/how-much-protein-do-you-need/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/guides/10000-steps-distance-and-calories-explained/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/guides/calories-in-one-roti-size-and-ingredients/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/guides/biryani-calories-understanding-portions/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/guides/beginners-guide-to-balanced-plate/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 6. Clean Desi Recipes -->
+  <url>
+    <loc>https://fithisab.pages.dev/recipes/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/recipes/high-protein-desi-breakfast/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/recipes/low-calorie-chicken-karahi/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/recipes/daal-roti-balanced-meal/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/recipes/high-protein-desi-snack/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 7. Core & Legal Pages -->
+  <url>
+    <loc>https://fithisab.pages.dev/about/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/contact/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/privacy-policy/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/terms/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://fithisab.pages.dev/disclaimer/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
